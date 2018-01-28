@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcin.helloandroid.MainActivity"
+    android:background="#FAFBFD">
+
+    <ImageView
+        android:id="@+id/header"
+        android:src="@drawable/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/think"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Think "
+                android:textSize="20sp"
+                android:textColor="#2C3C49"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/develop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Develop "
+                android:textSize="20sp"
+                android:textColor="#2C3C49"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="Create "
+                android:textSize="20sp"
+                android:textColor="#2C3C49"
+                android:textStyle="italic"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:src="@drawable/picture_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:src="@drawable/picture_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:src="@drawable/picture_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#FAFBFD">
+
+            <TextView
+                android:id="@+id/udacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Udacity"
+                android:textSize="16sp"
+                android:textColor="#2C3C49"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/udacity"
+                android:text="2465 Latham St"
+                android:textSize="16sp"
+                android:textColor="#2C3C49"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/zip_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:text="Mountain View, CA 94043"
+                android:textSize="16sp"
+                android:textColor="#2C3C49"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zip_code"
+                android:text="650-555-5555"
+                android:textSize="16sp"
+                android:textColor="#2C3C49"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Your key to success"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:background="#2C3C49" />
+
+</LinearLayout>
