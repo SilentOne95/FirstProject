@@ -5,16 +5,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.marcin.helloandroid.MainActivity"
-    android:background="#FAFBFD">
+    tools:context="com.example.android.firstproject.MainActivity"
+    android:background="@color/background_color">
 
     <ImageView
-        android:id="@+id/header"
+        android:id="@+id/header_image"
         android:src="@drawable/header"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.2"
-        android:scaleType="centerCrop"/>
+        style="@style/image_header"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -26,47 +23,29 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:padding="10dp">
+            android:padding="@dimen/padding_rows">
 
             <TextView
-                android:id="@+id/think"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="Think "
-                android:textSize="20sp"
-                android:textColor="#2C3C49"
-                android:textStyle="italic"/>
+                android:id="@+id/think_string"
+                android:text="@string/think"
+                style="@style/think_string"/>
 
             <TextView
-                android:id="@+id/develop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Develop "
-                android:textSize="20sp"
-                android:textColor="#2C3C49"
-                android:textStyle="italic"/>
+                android:id="@+id/develop_string"
+                android:text="@string/develop"
+                style="@style/develop_string"/>
 
             <TextView
-                android:id="@+id/create"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:text="Create "
-                android:textSize="20sp"
-                android:textColor="#2C3C49"
-                android:textStyle="italic"/>
+                android:id="@+id/create_string"
+                android:text="@string/create"
+                style="@style/create_string"/>
 
         </RelativeLayout>
 
         <ImageView
+            android:id="@+id/image_one"
             android:src="@drawable/picture_one"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:scaleType="centerCrop"/>
+            style="@style/image_one"/>
 
     </LinearLayout>
 
@@ -77,10 +56,9 @@
         android:layout_weight="3">
 
         <ImageView
+            android:id="@+id/image_two"
             android:src="@drawable/picture_two"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitCenter"/>
+            style="@style/image_two"/>
 
     </LinearLayout>
 
@@ -91,57 +69,36 @@
         android:layout_weight="3">
 
         <ImageView
+            android:id="@+id/image_three"
             android:src="@drawable/picture_three"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:scaleType="centerCrop"/>
+            style="@style/image_three"/>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="10dp"
-            android:background="#FAFBFD">
+            android:padding="@dimen/padding_rows"
+            android:background="@color/background_color">
 
             <TextView
-                android:id="@+id/udacity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Udacity"
-                android:textSize="16sp"
-                android:textColor="#2C3C49"
-                android:textStyle="bold"/>
+                android:id="@+id/udacity_string"
+                android:text="@string/udacity_string"
+                style="@style/basicStringThirdRow"/>
 
             <TextView
-                android:id="@+id/address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/udacity"
-                android:text="2465 Latham St"
-                android:textSize="16sp"
-                android:textColor="#2C3C49"
-                android:textStyle="bold"/>
+                android:id="@+id/street_name"
+                android:text="@string/street_name_string"
+                style="@style/street_name_string"/>
 
             <TextView
                 android:id="@+id/zip_code"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/address"
-                android:text="Mountain View, CA 94043"
-                android:textSize="16sp"
-                android:textColor="#2C3C49"
-                android:textStyle="bold"/>
+                android:text="@string/zip_code_string"
+                style="@style/zip_code_string"/>
 
             <TextView
                 android:id="@+id/phone_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/zip_code"
-                android:text="650-555-5555"
-                android:textSize="16sp"
-                android:textColor="#2C3C49"
-                android:textStyle="bold"/>
+                android:text="@string/phone_number"
+                style="@style/phone_number_string"/>
 
         </RelativeLayout>
 
@@ -149,13 +106,7 @@
 
     <TextView
         android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Your key to success"
-        android:gravity="center"
-        android:textSize="24sp"
-        android:textColor="#fff"
-        android:background="#2C3C49" />
+        android:text="@string/footer_string"
+        style="@style/footer_string"/>
 
 </LinearLayout>

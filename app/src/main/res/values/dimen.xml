@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic / default values -->
+    <dimen name="weight_layouts_zero">0dp</dimen>
+    <dimen name="basic_text_size_first_row">20sp</dimen>
+    <dimen name="basic_text_size_third_row">16sp</dimen>
+    <!-- first row -->
+    <dimen name="padding_rows">10dp</dimen>
+</resources>

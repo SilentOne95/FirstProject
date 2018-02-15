@@ -1,4 +1,82 @@
 <resources>
+    <!-- Image - header Udacity -->
+    <style name="image_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_layouts_zero</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Strings - think, develop, create // 1st row -->
+    <style name="basicStringFirstRow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/basic_text_size_first_row</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="think_string" parent="basicStringFirstRow">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="develop_string" parent="basicStringFirstRow">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="create_string" parent="basicStringFirstRow">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <!-- 3 images in 3 rows -->
+    <style name="image_one">
+        <item name="android:layout_width">@dimen/weight_layouts_zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="image_two">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="image_three">
+        <item name="android:layout_width">@dimen/weight_layouts_zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Strings - Udacity and address data // 3rd row -->
+    <style name="basicStringThirdRow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/basic_text_size_third_row</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="street_name_string" parent="basicStringThirdRow">
+        <item name="android:layout_below">@id/udacity_string</item>
+    </style>
+    <style name="zip_code_string" parent="basicStringThirdRow">
+        <item name="android:layout_below">@id/street_name</item>
+    </style>
+    <style name="phone_number_string" parent="basicStringThirdRow">
+        <item name="android:layout_below">@id/zip_code</item>
+    </style>
+
+    <!-- Footer image -->
+    <style name="footer_string">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_layouts_zero</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@color/text_color</item>
+    </style>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
